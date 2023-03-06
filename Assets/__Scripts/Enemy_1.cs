@@ -15,6 +15,7 @@ public class Enemy_1 : Enemy {
 
     private float x0; // The initial x value of pos
     private float birthTime;
+    public int scoreIncrease = 150;
 
 	// Use this for initialization
 	void Start()

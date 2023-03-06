@@ -1221,8 +1221,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   fireRate: 0.3
-  health: 10
-  score: 100
+  health: 100
+  scoreIncrease: 200
   showDamageDuration: 0.1
   powerUpDropChance: 1
   originalColors: []
@@ -1231,3 +1231,4 @@ MonoBehaviour:
   damageDoneTime: 0
   notifiedOfDestruction: 0
   duration: 4
+  scoreIncrease: 300

@@ -16,6 +16,8 @@ public class Enemy_3 : Enemy
     [SerializeField] private Vector3[] points;
     [SerializeField] private float birthTime;
 
+    public int scoreIncrease = 250;
+
     private void Start()
     {
         points = new Vector3[3]; // Initialize points

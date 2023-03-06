@@ -191,6 +191,41 @@ PrefabInstance:
       propertyPath: _type
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3923796494938685823, guid: ae4feb5a0d0624529b1f5beb5cbea392,
+        type: 3}
+      propertyPath: def.type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3923796494938685823, guid: ae4feb5a0d0624529b1f5beb5cbea392,
+        type: 3}
+      propertyPath: def.velocity
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3923796494938685823, guid: ae4feb5a0d0624529b1f5beb5cbea392,
+        type: 3}
+      propertyPath: def.damageOnHit
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3923796494938685823, guid: ae4feb5a0d0624529b1f5beb5cbea392,
+        type: 3}
+      propertyPath: def.delayBetweenShots
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3923796494938685823, guid: ae4feb5a0d0624529b1f5beb5cbea392,
+        type: 3}
+      propertyPath: def.projectileColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3923796494938685823, guid: ae4feb5a0d0624529b1f5beb5cbea392,
+        type: 3}
+      propertyPath: def.projectileColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3923796494938685823, guid: ae4feb5a0d0624529b1f5beb5cbea392,
+        type: 3}
+      propertyPath: def.projectileColor.r
+      value: 0.96469915
+      objectReference: {fileID: 0}
     - target: {fileID: 8456642093769543252, guid: ae4feb5a0d0624529b1f5beb5cbea392,
         type: 3}
       propertyPath: m_Name
@@ -768,6 +803,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3923796494938685823, guid: ae4feb5a0d0624529b1f5beb5cbea392,
+        type: 3}
+      propertyPath: def.damageOnHit
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 3923796494938685823, guid: ae4feb5a0d0624529b1f5beb5cbea392,
+        type: 3}
+      propertyPath: def.delayBetweenShots
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3923796494938685823, guid: ae4feb5a0d0624529b1f5beb5cbea392,
+        type: 3}
+      propertyPath: def.projectileColor.b
+      value: 0.6039734
+      objectReference: {fileID: 0}
+    - target: {fileID: 3923796494938685823, guid: ae4feb5a0d0624529b1f5beb5cbea392,
+        type: 3}
+      propertyPath: def.projectileColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3923796494938685823, guid: ae4feb5a0d0624529b1f5beb5cbea392,
+        type: 3}
+      propertyPath: def.projectileColor.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8456642093769543252, guid: ae4feb5a0d0624529b1f5beb5cbea392,
         type: 3}
@@ -1470,6 +1530,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3923796494938685823, guid: ae4feb5a0d0624529b1f5beb5cbea392,
+        type: 3}
+      propertyPath: _type
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3923796494938685823, guid: ae4feb5a0d0624529b1f5beb5cbea392,
+        type: 3}
+      propertyPath: def.damageOnHit
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 3923796494938685823, guid: ae4feb5a0d0624529b1f5beb5cbea392,
+        type: 3}
+      propertyPath: def.delayBetweenShots
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8456642093769543252, guid: ae4feb5a0d0624529b1f5beb5cbea392,
         type: 3}
       propertyPath: m_Name
@@ -1659,7 +1734,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b89945d366f74234594d375c5597c723, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 30
+  speed: 25
   rollMult: -45
   pitchMult: 30
   gameRestartDelay: 2
@@ -1859,3 +1934,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreGT: {fileID: 0}
+  score: 0

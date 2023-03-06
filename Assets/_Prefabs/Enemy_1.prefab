@@ -88,8 +88,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   fireRate: 0.3
-  health: 10
-  score: 100
+  health: 40
+  scoreIncrease: 150
   showDamageDuration: 0.1
   powerUpDropChance: 0.5
   originalColors: []
@@ -100,6 +100,7 @@ MonoBehaviour:
   waveFrequency: 2
   waveWidth: 4
   waveRotY: 45
+  scoreIncrease: 150
 --- !u!114 &-2533284608678742305
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -17,6 +17,8 @@ public class Enemy_2 : Enemy {
     [SerializeField] private float birthTime;
     private Quaternion baseRotation;
 
+    public int scoreIncrease = 200;
+
     private void Start()
     {
         // Pick any point on the left side of the screen

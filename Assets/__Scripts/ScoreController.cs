@@ -7,6 +7,7 @@ public class ScoreController : MonoBehaviour
 {
     [Header("Set Dynamically")]
     public Text scoreGT;
+    public int score = 0;
     
     // Start is called before the first frame update
     void Start()
@@ -16,13 +17,10 @@ public class ScoreController : MonoBehaviour
         scoreGT.text = "0";
     }
 
-    public void ScoreFlag(){
-        int score = int.Parse(scoreGT.text);
-        score += 100;
+    void Update(){
         scoreGT.text = score.ToString();
         if(score > HighScore.score){
             HighScore.score = score;
         }
-    }
-    
+    } 
 }
