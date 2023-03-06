@@ -44,6 +44,7 @@ public class Hero : MonoBehaviour {
         weapons[0].SetType(eWeaponType.blaster);
     }
 	
+    
 	// Update is called once per frame
 	void Update()
     {

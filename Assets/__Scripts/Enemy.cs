@@ -10,10 +10,9 @@ public class Enemy : MonoBehaviour
     public float speed = 10f; // The speed in m/s
     public float fireRate = 0.3f; // Seconds/shot (Unused)
     public float health = 10;
-    public int score = 100; // Points earned for destroying this
+    //public int scoreIncrease = 100; // Points earned for destroying this
     public float showDamageDuration = 0.1f; // # seconds to show damage
     public float powerUpDropChance = 1f; // Chance to drop a power-up
-    public int scoreIncrease = 100;
 
     [Header("Set Dynamically: Enemy")]
     public Color[] originalColors;
@@ -24,6 +23,7 @@ public class Enemy : MonoBehaviour
 
     protected BoundsCheck bndCheck;
     protected bool calledShipDestroyed = false;
+    public static ScoreController score;
 
     // This is a property: A method that acts like a field
     public Vector3 pos
@@ -49,8 +49,6 @@ public class Enemy : MonoBehaviour
             originalColors[i] = materials[i].color;
         }
     }
-
-
 
     void Update()
     {
@@ -92,8 +90,9 @@ public class Enemy : MonoBehaviour
                         calledShipDestroyed = true;
                         Main.SHIP_DESTROYED(this);
                     }
-                    ScoreController.ScoreFlag(scoreIncrease);
                     Destroy(this.gameObject);
+                    Destroy(otherGO);
+                    score.ScoreFlag();
                 }
             }
             // Destroy the projectile regardless

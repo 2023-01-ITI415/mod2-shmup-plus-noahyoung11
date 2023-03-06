@@ -16,12 +16,13 @@ public class ScoreController : MonoBehaviour
         scoreGT.text = "0";
     }
 
-    public void ScoreFlag(int scoreIncrease){
+    public void ScoreFlag(){
         int score = int.Parse(scoreGT.text);
-        score += scoreIncrease;
+        score += 100;
         scoreGT.text = score.ToString();
         if(score > HighScore.score){
             HighScore.score = score;
         }
     }
+    
 }
